@@ -108,13 +108,6 @@
               <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
                 <%= link "LiveDashboard", to: Routes.live_dashboard_path(@conn, :home), class: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" %>
               <% end %>
-              <%= if @current_user do %>
-                <%= link "Settings", to: Routes.user_settings_path(@conn, :edit), class: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" %>
-                <%= link "Log out", to: Routes.user_session_path(@conn, :delete), method: :delete, class: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" %>
-              <% else %>
-                <%= link "Register", to: Routes.user_registration_path(@conn, :new), class: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" %>
-                <%= link "Log in", to: Routes.user_session_path(@conn, :new), class: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium" %>
-              <% end %>
             </div>
           </div>
         </nav>
