@@ -1,4 +1,4 @@
-defmodule Web.UserOauthController do
+defmodule Web.UserOAuthController do
   @moduledoc """
   Used for Google SSO Button
 

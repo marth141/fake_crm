@@ -63,8 +63,8 @@ defmodule Web.Router do
     pipe_through [:browser, :redirect_if_user_is_authenticated]
 
     # Used for Google Sign in Button #SSO
-    get "/auth/:provider", UserOauthController, :request
-    get "/auth/:provider/callback", UserOauthController, :callback
+    get "/auth/:provider", UserOAuthController, :request
+    get "/auth/:provider/callback", UserOAuthController, :callback
 
     get "/users/register", UserRegistrationController, :new
     post "/users/register", UserRegistrationController, :create
