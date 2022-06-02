@@ -9,7 +9,7 @@ defmodule Db.Accounts do
   alias Db.Accounts.{User, UserToken, UserNotifier}
 
   @doc """
-  Used for Web.UserOauthController
+  Used for Web.UserOAuthController
 
   #SSO
   """
